@@ -1,0 +1,83 @@
+ <style>
+        *{
+ padding:0;
+ margin: 0;
+ box-sizing: border-box;   
+}
+/* custom fon linkin start */
+
+/* For website font link  */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+/* custom fon linkin end */
+
+.main_cont{
+    background-color: black;
+    overflow: hidden;
+}
+.text_cont{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    display: block;
+    transform: scale(1);
+}
+.animated_cont{
+    width: 950px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.text_cont .animated_cont h2{
+    font-family: 'oxygen', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(90deg,#d6d6e6, #49494d, #d6d6e6,#d6d6e6, #49494d,#d6d6e6);
+    background-size: 200%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 200%;
+    }
+    
+    100%{
+        background-position: 0%;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .text_cont{
+        transform: scale(.8);
+    }
+  }
+@media screen and (max-width: 800px) {
+    .text_cont{
+        transform: scale(.7);
+    }
+  }
+@media screen and (max-width: 600px) {
+    .text_cont{
+        transform: scale(.5);
+    }
+  }
+@media screen and (max-width: 500px) {
+    .text_cont{
+        transform: scale(.3);
+    }
+  }
+    </style>
+
+<!-- animated main container -->
+    <div class="main_cont">
+    <div class="text_cont">
+        <div class="animated_cont">
+            <h2>Wer nicht mit der Zeit geht,<br>geht mit der Zeit.</h2>
+        </div>
+    </div>
+    </div>
